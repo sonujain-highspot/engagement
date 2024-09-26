@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  commentable: one
+  commentable_type: Commentable
+  visibility: 1
+  content: MyText
+  deleted_at: 2024-09-24 08:53:35
+
+two:
+  user: two
+  commentable: two
+  commentable_type: Commentable
+  visibility: 1
+  content: MyText
+  deleted_at: 2024-09-24 08:53:35

@@ -1,0 +1,6 @@
+class PhoneCall < ApplicationRecord
+  belongs_to :user
+  has_one :transcript, as: :transcriptable
+  has_one :recording, as: :recordable
+  has_many :comments, as: :commentable
+end

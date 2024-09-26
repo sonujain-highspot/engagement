@@ -1,0 +1,52 @@
+<%= form_with(model: phone_call) do |form| %>
+  <% if phone_call.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(phone_call.errors.count, "error") %> prohibited this phone_call from being saved:</h2>
+
+      <ul>
+        <% phone_call.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :start_time, style: "display: block" %>
+    <%= form.datetime_field :start_time %>
+  </div>
+
+  <div>
+    <%= form.label :end_time, style: "display: block" %>
+    <%= form.datetime_field :end_time %>
+  </div>
+
+  <div>
+    <%= form.label :caller, style: "display: block" %>
+    <%= form.text_field :caller %>
+  </div>
+
+  <div>
+    <%= form.label :receiver, style: "display: block" %>
+    <%= form.text_field :receiver %>
+  </div>
+
+  <div>
+    <%= form.label :duration, style: "display: block" %>
+    <%= form.number_field :duration %>
+  </div>
+
+  <div>
+    <%= form.label :provider, style: "display: block" %>
+    <%= form.text_field :provider %>
+  </div>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

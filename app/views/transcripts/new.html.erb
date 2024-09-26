@@ -1,0 +1,11 @@
+<% content_for :title, "New transcript" %>
+
+<h1>New transcript</h1>
+
+<%= render "form", transcript: @transcript %>
+
+<br>
+
+<div>
+  <%= link_to "Back to transcripts", transcripts_path %>
+</div>

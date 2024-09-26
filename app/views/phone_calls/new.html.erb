@@ -1,0 +1,11 @@
+<% content_for :title, "New phone call" %>
+
+<h1>New phone call</h1>
+
+<%= render "form", phone_call: @phone_call %>
+
+<br>
+
+<div>
+  <%= link_to "Back to phone calls", phone_calls_path %>
+</div>

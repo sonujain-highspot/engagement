@@ -1,0 +1,32 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @meeting %><br/><br/>
+
+<div>
+  <%= link_to "Edit this meeting", edit_meeting_path(@meeting) %> |     
+  <%= link_to "Back to meetings", meetings_path %>
+  <br/><br/>
+  <%= button_to "Destroy this meeting", @meeting, method: :delete %>
+</div>
+<br/><br/>
+LISTING COMMENTS 
+<ul>
+  <%comments = @meeting.comments%>
+  <% comments.each do |comment| %> 
+    <li>
+      <%if comment.deleted_at.blank?%>
+        <div><%= comment.content %></t> <%= button_to "Delete this comment", comment, method: :delete %></div>
+      <%end%> 
+    </li>
+  <% end %>
+</ul>
+
+<h1>New comment</h1>
+<% @comment = @meeting.comments.build %>
+<% puts @comment.inspect %>
+
+
+
+<br>
+
+

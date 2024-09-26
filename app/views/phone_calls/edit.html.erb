@@ -1,0 +1,12 @@
+<% content_for :title, "Editing phone call" %>
+
+<h1>Editing phone call</h1>
+
+<%= render "form", phone_call: @phone_call %>
+
+<br>
+
+<div>
+  <%= link_to "Show this phone call", @phone_call %> |
+  <%= link_to "Back to phone calls", phone_calls_path %>
+</div>

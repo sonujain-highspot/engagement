@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  transcriptable: one
+  transcriptable_type: Transcriptable
+  duration: 1
+  url: MyString
+
+two:
+  transcriptable: two
+  transcriptable_type: Transcriptable
+  duration: 1
+  url: MyString
